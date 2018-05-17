@@ -13,9 +13,9 @@ function produceDrivingRange() {
 
 }
 
-function produceTipCalculator(tip) {
-  return function(charge) {
-    return charge * tip;
+function produceTipCalculator(percent) {
+  return function(totalCost) {
+    return totalCost * percent;
   }
 }
 
