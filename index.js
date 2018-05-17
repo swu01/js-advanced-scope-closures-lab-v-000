@@ -9,11 +9,6 @@ function produceDrivingRange(range) {
     }
 }
 
-
-function produceDrivingRange() {
-
-}
-
 function produceTipCalculator(percent) {
   return function(totalCost) {
     return totalCost * percent;
