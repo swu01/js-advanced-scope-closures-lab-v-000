@@ -5,9 +5,9 @@ function produceDrivingRange(blockRange) {
       return `${Math.abs(result)} blocks out of range`;
     } else {
       return `within range by ${result}`;
-    };
-  };
-};
+    }
+  }
+}
 
 function produceDrivingRange() {
 
