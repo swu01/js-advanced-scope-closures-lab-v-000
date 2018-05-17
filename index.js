@@ -1,13 +1,14 @@
-function produceDrivingRange(blockRange) {
-  return function(start, end) {
-    result = blockRange - (parseInt(end) - parseInt(start));
-    if (result < 0) {
-      return `${Math.abs(result)} blocks out of range`;
-    } else {
-      return `within range by ${result}`;
+function produceDrivingRange(range) {
+    return function(start, end) {
+        const distance = Math.abs(parseInt(end) - parseInt(start));
+        if (distance > range) {
+            return `${distance - range} blocks out of range`;
+        } else {
+            return `within range by ${range - distance}`;
+        }
     }
-  }
 }
+
 
 function produceDrivingRange() {
 
